@@ -140,4 +140,17 @@
       // Get the user data
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
-      const password =
+      const password = document.getElementById('password').value;
+
+      // Store user data in localStorage (you can replace this with a backend later)
+      localStorage.setItem('name', name);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+
+      // Redirect to home page
+      window.location.href = 'home.html';
+    });
+  </script>
+
+</body>
+</html>
