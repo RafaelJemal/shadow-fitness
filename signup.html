@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +13,87 @@
     }
 
     body {
-      background: linear-gradient(135deg, #0f0c29
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-       
-         
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ffe7;
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ffe7;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #00ffe7;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px #00ffe7;
+    }
+
+    button:hover {
+      background: #0ff;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚔️ Join ShadowFit ⚔️</h1>
+    <form action="success.html" method="GET">
+      <input type="text" name="username" placeholder="Hunter Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Create Password" required>
+      <button type="submit">Enter the Dungeon</button>
+    </form>
+  </div>
+</body>
+</html>
+     
