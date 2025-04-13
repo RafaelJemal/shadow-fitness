@@ -1,172 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowFit - Level Up Like Jin-Woo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ShadowFit | Level Up Your Fitness</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #222, #444);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #111;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #ff5722;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+        }
+
+        p {
+            font-size: 20px;
+            color: #bbb;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>ShadowFit</h1>
-            <p>Level up like a Hunter. Awaken your inner strength.</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#signup">Sign Up</a></li>
-            </ul>
-        </nav>
+
+    <header>
+        <h1>Welcome to ShadowFit!</h1>
+        <p>Where your fitness journey levels up like an RPG!</p>
+        <button class="cta-button">Join the Fitness Adventure</button>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h2>Start Your Awakening Today</h2>
-            <p>10 days free, then just $1/month. Become a Hunter and level up your fitness.</p>
-            <a href="#signup" class="cta-btn">Begin Your Journey</a>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="feature">
-            <h3>Daily Quests</h3>
-            <p>Workouts based on your Hunter rank. From beginner to S-Rank, level up your strength.</p>
-        </div>
-        <div class="feature">
-            <h3>Mind Quests</h3>
-            <p>Focus and mental training to unlock your true potential.</p>
-        </div>
-        <div class="feature">
-            <h3>System Messages</h3>
-            <p>Receive daily "System Messages" to track your progress and unlock new workouts.</p>
-        </div>
-    </section>
-
-    <section id="signup" class="signup">
-        <h2>Sign Up For Your Free Trial</h2>
-        <p>Start your 10-day free trial and experience the Hunter grind.</p>
-        <form action="signup_processing.php" method="POST">
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Start Free Trial</button>
-        </form>
-    </section>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background: ;C:\Users\JEMAL.ENDRIS\Desktop\Desk Top ALL DOC\Baba musics\background 1.webp
-    color: white;
-}
-
-.header {
-    background: C:\Users\JEMAL.ENDRIS\Desktop\Desk Top ALL DOC\Baba musics\background2.jpg;
-    padding: 20px;
-    text-align: center;
-}
-
-.header h1 {
-    font-size: 36px;
-    color: #ff9f00;
-}
-
-.header nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-.header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.hero {
-    background: url('your-image.jpg') center center/cover no-repeat;
-    height: 80vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.hero h2 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background: #ff9f00;
-    color: #111;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.features {
-    padding: 40px 20px;
-    background-color: #222;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.feature {
-    margin-bottom: 30px;
-}
-
-.signup {
-    background: #333;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.signup input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    margin: 10px 0;
-}
-
-.signup button {
-    background: #ff9f00;
-    color: #111;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-}
-
-.signup button:hover {
-    background: #ff7f00;
-}
-
-.footer {
-    text-align: center;
-    background: #111;
-    padding: 20px;
-}
-
-
-    <footer class="footer">
-        <p>&copy; 2025 ShadowFit. All Rights Reserved.</p>
+    <footer>
+        <p>© 2025 ShadowFit | Level Up Your Fitness</p>
     </footer>
+
 </body>
 </html>
+
+    
+          
+
