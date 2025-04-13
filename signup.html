@@ -113,10 +113,10 @@
 
   <div class="container">
     <h1 class="heading">Sign Up</h1>
-    <form action="home.html" method="POST">
-      <input type="text" name="name" placeholder="Enter your name" required>
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <input type="password" name="password" placeholder="Enter your password" required>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Enter your password" required>
       <button type="submit" class="btn">Become a Player</button>
     </form>
   </div>
@@ -132,7 +132,12 @@
         document.getElementById('floating-notification').style.display = 'none';
       }, 3000); // Hide after 3 seconds
     }, 2000); // Show after 2 seconds
-  </script>
 
-</body>
-</html>
+    // Handle form submission
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from actually submitting
+
+      // Get the user data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password =
